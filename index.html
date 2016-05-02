@@ -2,7 +2,12 @@
 <html>
 <head>
 <title>HTML DOM DEMO</title>
-<!--<script src="htmldemo064.js" type="text/javascript"></script> -->
+function run() {
+    var d = document.getElementsByTagName("iframe");
+    var s = document.getElementById("show");
+    s.innerHTML = d[0];
+    d[0].src = "http://www.youtube.com/embed/MWBTvZ0VxzM";
+}
 </head>
 <body>
 <div><iframe width="820" height="915" src=""></iframe></div>
